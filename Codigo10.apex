@@ -1,4 +1,22 @@
-<apex:page standardController="Account">
-    <apex:image url="{!URLFOR($Resource.TextZip,
-                    'images/Bluehills.jpg')} with="50" height="50" />
-</apex:page>
+public class TheController{
+
+      String searchText;
+       List<Lead> results;
+
+        public String getSearchText(){
+               return searchText;
+}
+
+public void setSearchText(String s){
+       searchText = s;
+}
+
+public List<Lead> results {get;}
+
+public PageReference doSearch(){
+       results = [SELECT ID, Name, Email
+                              FROM Lead
+                              WHERE searchText =; searchText]:
+        return null;
+  }
+}
