@@ -1,8 +1,6 @@
-@isTest
-Run ALL Tests|Debug All Tests
-private class MyTestClass {
-    Run Test|Debug Test
-    @isTest static void myTest() {
-    // code_block
-    }
-}
+<apex:page standardController="Account">
+    <apex:image url="{!URLFOR($Resource.TextZip,
+                    'images/Bluehills.jpg')} with="59" height="50" />
+</apex:page>
+
+
