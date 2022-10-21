@@ -6,7 +6,7 @@ public static void dmlDatabaseInsert (){
     Database.SaveResult[] srList = Database.insert(acctList, false);
 
      for (Database.SaveResult sr : srList) {
-         if (sr. isSuccess()) {
+         if (sr.isSuccess()) {
             System.debug('successfully inserted account. Account ID: ' + sr.getId());
          }
          else {
